@@ -41,6 +41,7 @@ assetic:
             inputs:
                 - %kernel.root_dir%/../vendor/twbs/bootstrap/less/bootstrap.less
                 - %kernel.root_dir%/../vendor/braincrafted/bootstrap-bundle/Braincrafted/Bundle/BootstrapBundle/Resources/less/form.less
+                - %kernel.root_dir%/../src/AppBundle/Resources/public/less/layout.less
             filters:
                 - less
                 - cssrewrite
@@ -75,9 +76,12 @@ assetic:
             cssrewrite: ~
 
 braincrafted_bootstrap:
+   output_dir:
+   assets_dir: %kernel.root_dir%/../vendor/twbs/bootstrap
+   jquery_path: %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.10.2.js
    customize:
       variables_file: %kernel.root_dir%/Resources/public/less/variables.less
-
+      bootstrap_output: %kernel.root_dir%/Resources/public/less/bootstrap.less
    less_filter: less
    auto_configure:
       assetic: false
