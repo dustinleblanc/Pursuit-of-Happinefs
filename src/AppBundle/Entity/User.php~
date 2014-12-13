@@ -145,47 +145,4 @@ class User extends BaseUser
     {
         return $this->weeklyWage;
     }
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Add painPointUserAssignments
-     *
-     * @param \AppBundle\Entity\PainPointUserAssignment $painPointUserAssignments
-     * @return User
-     */
-    public function addPainPointUserAssignment(\AppBundle\Entity\PainPointUserAssignment $painPointUserAssignments)
-    {
-        $this->painPointUserAssignments[] = $painPointUserAssignments;
-
-        return $this;
-    }
-
-    /**
-     * Remove painPointUserAssignments
-     *
-     * @param \AppBundle\Entity\PainPointUserAssignment $painPointUserAssignments
-     */
-    public function removePainPointUserAssignment(\AppBundle\Entity\PainPointUserAssignment $painPointUserAssignments)
-    {
-        $this->painPointUserAssignments->removeElement($painPointUserAssignments);
-    }
-
-    /**
-     * Get painPointUserAssignments
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPainPointUserAssignments()
-    {
-        return $this->painPointUserAssignments;
-    }
 }
