@@ -1,11 +1,51 @@
 {% extends 'AppBundle::layout.html.twig' %}
 
 {% block content %}
-<div class="jumbotron">
-  <div class="container">
-    <h1>Hello, world!</h1>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <p><a class="btn btn-primary btn-lg" href="login" role="button">Log in</a></p>
+<div class="container">
+  <div class="page-header">
+    <h1>OK <small>, thanks for the input</small></h1>
   </div>
+  <div class="row">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        40 Hours In Employment
+      </div>
+      <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 40%">
+        20 Hours to invest
+      </div>
+    </div>
+    <p>You said you're having a hard time with food insecurity, And you have 20 free hours in your schedule. Based on your needs, time available, and skills. We think the following opportunities could help you to meet your need:</p>
+
+  </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://steelwheelfarm.files.wordpress.com/2014/06/csa-fruits.png" alt="..." class="img-responsive img-circle">
+        <div class="caption">
+          <h3>Option 1</h3>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+    </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.greenwagonfarm.com/wp-content/uploads/2013/03/csa.png" alt="..." class="img-responsive img-circle">
+      <div class="caption">
+        <h3>Option 2</h3>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.wildwoodharvest.com/wp-content/uploads/2014/11/IMG_8734-600x600.jpg" alt="..." class="img-responsive img-circle">
+      <div class="caption">
+        <h3>Option 3</h3>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      </div>
+    </div>
+  </div>
+  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+
+    Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum.</p>
 </div>
 {% endblock %}
